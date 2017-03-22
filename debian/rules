@@ -34,9 +34,9 @@ built: reconf dibuild config
 
 reconf: .reconf
 .reconf:
-    $(checkdir)
-    AUTOHEADER=/bin/true dh_autoreconf
-    touch $@
+	$(checkdir)
+	AUTOHEADER=/bin/true dh_autoreconf
+	touch $@
 
 
 config: .census .reconf
